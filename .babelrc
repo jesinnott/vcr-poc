@@ -1,0 +1,27 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"modules": "commonjs",
+				"targets": {
+					"node": "current"
+				}
+			}
+		]
+	],
+	"plugins": [
+		"add-module-exports",
+		[
+			"babel-plugin-root-import",
+			{
+				"rootPathSuffix": "./",
+				"rootPathPrefix": "/"
+			}
+		]
+  ],
+  "ignore": [
+    "./tapes",
+    "./node_modules"
+  ]
+}
